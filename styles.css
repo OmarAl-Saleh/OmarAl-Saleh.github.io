@@ -71,3 +71,32 @@
 #copy-email{font:inherit;font-size:14px;font-weight:600;color:var(--blue);background:var(--light);border:1px solid var(--line);border-radius:4px;padding:7px 13px;cursor:pointer}
 #copy-email:hover{border-color:var(--blue)}
 #copy-email-status{font-size:14px;color:var(--muted)}
+
+/* Compact desktop proportions without changing browser zoom. */
+@media(min-width:901px){
+ body{font-size:16px}
+ .container{max-width:1060px}
+ .nav-shell{min-height:66px;max-width:1200px}
+ nav a{padding-block:21px}
+ nav a[aria-current="location"]:after{bottom:11px}
+ .hero{padding-top:48px;padding-bottom:45px;column-gap:64px;grid-template-columns:1.65fr 1fr}
+ h1{font-size:54px;letter-spacing:-2px}
+ .hero-role{font-size:21px}
+ .hero-interests{font-size:17px;margin-top:14px}
+ .intro{font-size:16px;line-height:1.7;margin-top:18px}
+ .hero-actions{margin-top:22px}
+ .social-links{margin-top:18px;gap:20px}
+ .portrait-wrap{width:100%;max-width:300px;justify-self:end}
+ .section{padding-block:62px}
+ .section-heading{margin-bottom:32px}
+ h2{font-size:34px}
+ .section-heading>p{font-size:16px}
+ .research-item{padding-top:19px}
+ .research-item h3{font-size:22px}
+ .research-item p{font-size:15px}
+ .education-entry{padding-block:26px}
+ .project{padding-block:26px}
+ .project-copy h3{font-size:26px}
+ .experience-entry{padding-block:25px}
+ .contact-section{padding-block:58px}
+}
